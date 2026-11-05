@@ -1,5 +1,7 @@
 name: CI
+
 on: [push]
+
 jobs:
   test:
     runs-on: windows-latest
@@ -10,4 +12,3 @@ jobs:
           python-version: "3.12"
       - run: pip install pytest
       - run: pytest
-        
